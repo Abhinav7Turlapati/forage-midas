@@ -1,0 +1,13 @@
+server:
+  port: 33400
+
+general:
+  kafka-topic: trader-updates
+
+spring:
+  kafka:
+    producer:
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+
+incentive:
+  api-url: http://localhost:8085/incentive
